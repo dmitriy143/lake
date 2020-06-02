@@ -1,0 +1,40 @@
+footer.page__footer.footer
+  ul.footer__list
+    -
+      let footer_list = [{heading: "Cabin Rooms", 
+      link_1: "<a class=\"footer__link\" href=\"#\">Two-Bedroom Apartment with Sauna</a>",
+      link_2: "<a class=\"footer__link\" href=\"#\">Deluxe One-Bedroom Apartment</a>",
+      link_3: "<a class=\"footer__link\" href=\"#\">Economy Single Room</a>",
+      link_4: "<a class=\"footer__link\" href=\"#\">Book Online</a>"}, 
+        {heading: "Activities", 
+      link_1: "<a class=\"footer__link\" href=\"#\">Outdoor Recreation</a>",
+      link_2: "<a class=\"footer__link\" href=\"#\">Camping Area</a>",
+      link_3: "<a class=\"footer__link\" href=\"#\">Lodging</a>",
+      link_4: "<a class=\"footer__link\" href=\"#\">Markets & Farm Tours</a>"}, 
+        {heading: "Events", 
+      link_1: "<a class=\"footer__link\" href=\"#\">Upcoming Events</a>",
+      link_2: "<a class=\"footer__link\" href=\"#\">Annual Event</a>",
+      link_3: "<a class=\"footer__link\" href=\"#\">Submit Event</a>",
+      link_4: "<a class=\"footer__link\" href=\"#\">Meetings</a>"}, 
+        {heading: "On The Water", 
+      link_1: "<a class=\"footer__link\" href=\"#\">Boat Rentals</a>",
+      link_2: "<a class=\"footer__link\" href=\"#\">Jet Ski & Sailboat</a>",
+      link_3: "<a class=\"footer__link\" href=\"#\">Kayaking & Canoeing</a>",
+      link_4: "<a class=\"footer__link\" href=\"#\">Local Beaches</a>"}];
+    each item in footer_list
+      li.footer__list-item
+        h2.footer__heading= item.heading
+        ul.footer__link-list
+          li.footer__link-list-item
+            != item.link_1
+          li.footer__link-list-item
+            != item.link_2
+          li.footer__link-list-item
+            != item.link_3
+          li.footer__link-list-item
+            != item.link_4
+  .footer__additional-Information
+    .footer__additional-Information-container
+      p.footer__additional-Information-text © 2020 Mountainview
+      p.footer__additional-Information-wrapper
+        a.footer__additional-Information-link(href="#") terms & conditions

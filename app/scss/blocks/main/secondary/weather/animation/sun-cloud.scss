@@ -1,0 +1,17 @@
+.sun-cloud {
+  animation: sun-cloud 15s linear infinite;
+}
+
+.cloud-sun {
+  transform: translate(-0px, -37px);
+}
+
+@keyframes sun-cloud {
+  0% {
+    transform: translate(5px, -3px) scale(0.9) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(5px, -3px) scale(0.9) rotate(360deg);
+  }
+}

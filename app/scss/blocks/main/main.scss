@@ -1,0 +1,20 @@
+@import "content/content";
+@import "secondary/secondary";
+
+.page__container {
+  background-color: #fff;
+  max-width: 1516px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: 992px) {
+  .page__container {
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 60px;
+  }
+}

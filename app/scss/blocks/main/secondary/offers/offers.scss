@@ -1,0 +1,25 @@
+.offers {
+  @include secondary-element;
+}
+
+.offers__heading {
+  @include line-top(16px);
+}
+
+.offers__list {
+  @include offers-posts-list;
+}
+
+.offers__item:not(:first-child) {
+  margin-top: 14px;
+}
+
+.offers__link {
+  @include offers-posts;
+}
+
+@media (min-width: 767px) {
+  .offers__list {
+    margin-bottom: 14px;
+  }
+}

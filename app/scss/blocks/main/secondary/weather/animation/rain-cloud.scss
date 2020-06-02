@@ -1,0 +1,66 @@
+.cloud-rain {
+  transform: translate(-0px, -39px);
+}
+
+.rain {
+  animation: rain 2s linear infinite;
+}
+
+.rain-2 {
+  animation: rain-2 2s linear infinite;
+}
+
+.rain-3 {
+  animation: rain-3 2s linear infinite;
+}
+
+@keyframes rain {
+  0% {
+    transform: translate(-4px, -10px);
+    opacity: 1;
+  }
+
+  30% {
+    transform: translate(-4px, 25px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-4px, 25px);
+    opacity: 0;
+  }
+}
+
+@keyframes rain-2 {
+  0% {
+    transform: translate(-2px, -10px);
+    opacity: 1;
+  }
+
+  60% {
+    transform: translate(-2px, 25px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-2px, 25px);
+    opacity: 0;
+  }
+}
+
+@keyframes rain-3 {
+  0% {
+    transform: translate(2px, -10px);
+    opacity: 1;
+  }
+
+  90% {
+    transform: translate(2px, 25px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(2px, 25px);
+    opacity: 0;
+  }
+}

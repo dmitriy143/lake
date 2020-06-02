@@ -1,0 +1,24 @@
+@import "form/form";
+@import "gallery/gallery";
+@import "weather/weather";
+@import "offers/offers";
+@import "posts/posts";
+@import "video/video";
+
+.secondary {
+  box-shadow: 0 0 24px rgba(61, 61, 61, .1);
+  padding: 40px 24px;
+  margin-bottom: 60px;
+}
+
+
+@media (min-width: 992px) {
+  .secondary {
+    margin-top: -143px;
+    width: 32%;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+  }
+}

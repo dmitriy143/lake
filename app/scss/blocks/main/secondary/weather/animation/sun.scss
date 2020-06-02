@@ -1,0 +1,13 @@
+.sun {
+  animation: sun 15s linear infinite;
+}
+
+@keyframes sun {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

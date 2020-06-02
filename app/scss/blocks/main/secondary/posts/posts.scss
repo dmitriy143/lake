@@ -1,0 +1,31 @@
+.posts {
+  @include secondary-element;
+}
+
+.posts__heading {
+  @include line-top(16px);
+}
+
+.posts__list {
+  @include offers-posts-list;
+  padding-left: 15.4px;
+  list-style: circle;
+  color: #909090;;
+}
+
+.posts__item:not(:first-child) {
+  margin-top: 14px;
+}
+.posts__item{
+  padding-right: 5px;
+}
+
+.posts__link {
+  @include offers-posts;
+}
+
+@media (min-width: 767px) {
+  .posts__list {
+    margin-bottom: 14px;
+  }
+}

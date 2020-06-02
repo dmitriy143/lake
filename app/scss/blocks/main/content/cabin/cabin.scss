@@ -1,0 +1,44 @@
+.cabin {
+  background-color: #f3f5f7;
+}
+
+.cabin__wrapper {
+  padding: 80px 20px 60px;
+}
+
+.cabin__headeing {
+  @include line-top(24px);
+}
+
+.cabin__image {
+  margin: 24px auto;
+  @include img-size;
+}
+
+.cabin__text-item {
+  color: #383838;
+  font-family: 'Lora', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  margin: 0 0 32px 0;
+}
+
+@media (min-width: 768px) {
+  .cabin__image {
+    float: left;
+    margin: 8px 60px 48px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .cabin__wrapper {
+    margin-left: auto;
+    padding: 0;
+    position: relative;
+    z-index: 0;
+  }
+
+  .cabin__alignment {
+    @include bg-color(-1);
+  }
+}

@@ -1,0 +1,96 @@
+@import "list/list";
+
+
+.menu {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #292929;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 30px 40px;
+}
+
+.menu__navigation {
+  text-align: center;
+}
+
+.menu__show {
+  display: none;
+}
+
+.menu__show:checked~.menu__desctop {
+  display: block;
+}
+
+.menu__icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 14px;
+  height: 2px;
+  margin-top: 2px;
+  margin-right: 7px;
+  background-color: #fff;
+  box-shadow: 0 4px 0 0 (#fff), 0 8px 0 0 (#fff);
+}
+
+.menu__show:checked~.menu__phone .menu__icon {
+  box-shadow: none;
+  transform: rotate(45deg);
+  margin-right: 10px;
+  margin-top: 5px;
+  height: 3px;
+  width: 11px;
+  border-radius: 1px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    transform: rotate(-90deg);
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 11px;
+    border-radius: 1px;
+  }
+}
+
+.menu__desctop {
+  display: none;
+  padding-top: 44px;
+}
+
+.menu__list {
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  .menu {
+    padding: 0;
+  }
+
+  .menu__phone {
+    display: none;
+  }
+
+  .menu__desctop {
+    display: block;
+    padding-top: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -9999em;
+      left: -9999em;
+      background-color: #292929;
+      overflow-x: hidden;
+      z-index: 0;
+    }
+  }
+}

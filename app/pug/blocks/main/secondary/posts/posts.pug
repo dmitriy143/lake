@@ -1,0 +1,8 @@
+section.secondary__posts.posts
+  h2.posts__heading Recent Posts
+  ul.posts__list
+    -
+      const posts=['5 Tips and Hacks for Beginner Hikers', 'Work Hard, Party Hard in a Luxury Chalet in the Mountains', 'How to Get the Most Out of Your Cabin Host', 'How to Find the Best Chalets in the USA','Vacation Rental Homes for the Young Traveler']
+    each item in posts
+      li.posts__item
+        a.posts__link(href="#")= item

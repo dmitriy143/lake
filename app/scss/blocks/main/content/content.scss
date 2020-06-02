@@ -1,0 +1,17 @@
+@import "cabin/cabin";
+@import "gallery-content/gallery-content";
+@import "reviews/reviews";
+@import "overview-rules/overview-rules";
+
+
+.content {
+  margin: 0 -20px;
+}
+
+@media (min-width: 992px) {
+  .content {
+    margin: 0;
+    order: 1;
+    width: 63%;
+  }
+}

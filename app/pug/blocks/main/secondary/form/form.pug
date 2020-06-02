@@ -1,0 +1,24 @@
+section.secondary__form.form
+  form.form__search(action="#" method="#")
+    label.form__item(for="in") Check-in: * 
+    input.form__field.form__field--date(type="text" placeholder="Check-in Date" id="in")
+    label.form__item(for="out") Check-out: *
+    input.form__field.form__field--date(type="text" placeholder="Check-out Date" id="out")
+    .form__age-wrapper
+      .form__wrapper-age
+        label.form__item(for="adults") Adults:
+        select.form__field.form__field--age(name="adults" id="adults")
+          -for(let i=1; i<=10; i++)
+            if i===1
+              option(value= i selected)= i
+            else
+              option(value= i)= i
+      .form__wrapper-children
+        label.form__item(for="children") Children:
+        select.form__field.form__field--age(name="children" id="children")
+          -for(let i=0; i<=4; i++)
+            if i===0
+              option(value= i selected)= i
+            else
+              option(value= i)= i
+    button.form__btn Search

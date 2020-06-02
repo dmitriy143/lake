@@ -1,0 +1,13 @@
+@import "vars/vars";
+@import "blocks/mixin/mixin";
+@import "blocks/body/body";
+@import "blocks/header/header";
+@import "blocks/main/main";
+@import "blocks/footer/footer";
+
+.page__common {
+  background-color: #fff;
+  overflow-x: hidden;
+  max-width: 1516px;
+  margin: 0 auto;
+}

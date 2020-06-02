@@ -1,0 +1,26 @@
+.gallery {
+  @include secondary-element;
+}
+
+.gallery__heading {
+  @include line-top(16px);
+}
+
+.gallery__all-img {
+  padding-bottom: 21px;
+}
+
+.gallery__img-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gallery__img-link {
+  padding: 5px;
+  padding-bottom: 12px;
+}
+
+.gallery__img-item {
+  @include img-size;
+}

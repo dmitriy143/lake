@@ -1,0 +1,8 @@
+section.secondary__offers.offers
+  h2.offers__heading Special Offers
+  ul.offers__list
+    -
+      const list=['Prepaid Low Season Offer 35% Off', 'Early Booking', 'Members’ Rate', 'Business Offer','Romantic Weekend','Half Price on Your Second Apartment','Advance Purchase Offer']
+    each item in list
+      li.offers__item
+        a.offers__link(href="#")= item
