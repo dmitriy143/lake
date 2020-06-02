@@ -79,7 +79,7 @@ gulp.task('export', function () {
   let buildFonts = gulp.src('app/fonts/**/*.*')
     .pipe(gulp.dest('dist/fonts'))
   let buildImg = gulp.src('app/img/**/*.*')
-    .pipe(gulp.dest('dist/img'))
+    .pipe(gulp.dest('dist/img')) 
 })
 
 gulp.task('watch', function () {
