@@ -3,7 +3,8 @@ ul.menu__list.list
     let menuList = [{text: 'home',
     id:'btn-home',
     link: ['<a class="list__item-link" href="#">Home No Sidebar</a>'],
-    class: 'list__item--active'},
+    class: 'list__item--active',
+    href: 'blog.html'},
     {text: 'pages',
     id:'btn-pages',
     link: ['<a class="list__item-link" href="#">Testimonial</a>',
@@ -13,7 +14,8 @@ ul.menu__list.list
     '<a class="list__item-link" href="#">Sidebar Left</a>',
     '<a class="list__item-link" href="#">Sidebar Right</a>',
     '<a class="list__item-link" href="#">No Sidebar</a>',
-    '<a class="list__item-link" href="#">404 Page</a>']},
+    '<a class="list__item-link" href="#">404 Page</a>'],
+    href: '#'},
     {text: 'rooms',
     id:'btn-rooms',
     link: ['<a class="list__item-link" href="#">Standart</a>',
@@ -21,21 +23,26 @@ ul.menu__list.list
     '<a class="list__item-link" href="#">List</a>',
     '<a class="list__item-link" href="#">Single Room</a>',
     '<a class="list__item-link" href="#">Single Room No Sidebar</a>',
-    '<a class="list__item-link" href="#">Book Online</a>']},
+    '<a class="list__item-link" href="#">Book Online</a>'],
+    href: '#'},
     {text: 'blog',
     id:'btn-blog',
     link: ['<a class="list__item-link" href="#">Single Post No Sidebar</a>',
-    '<a class="list__item-link" href="#">Single Post</a>']},
-    {text: 'activities'},
-    {text: 'contacts us'},
+    '<a class="list__item-link" href="#">Single Post</a>'],
+    href: '#'},
+    {text: 'activities',
+    href: '#'},
+    {text: 'contacts us',
+    href: '#'},
     {text: 'blocks',
     id:'btn-blocks',
     link: ['<a class="list__item-link" href="#">Blocks 01</a>',
     '<a class="list__item-link" href="#">Blocks 02</a>',
-    '<a class="list__item-link" href="#">Blocks 03</a>']}]
+    '<a class="list__item-link" href="#">Blocks 03</a>'],
+    href: '#'}]
   each item in menuList
     li.list__item
-      a.list__link(href="#" class= item.class)= item.text
+      a.list__link(href= item.href class= item.class)= item.text
       if item.id
         label.fas.fa-sort-down.list__icon(for= item.id)
         input.list__show(type="checkbox" id= item.id)
