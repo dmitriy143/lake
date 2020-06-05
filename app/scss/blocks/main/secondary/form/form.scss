@@ -29,9 +29,12 @@
   background-repeat: no-repeat;
   background-position: right 20px center;
 
-  &:hover {
+  &:focus {
     background-image: url(../img/date-hover.svg);
+    outline: none;
+    border-color: #909090;
   }
+
 }
 
 .form__field--age {
@@ -41,8 +44,10 @@
   background-position: right 20px center;
   appearance: none;
 
-  &:hover {
+  &:focus {
     background-image: url(../img/age-hover.svg);
+    outline: none;
+    border-color: #909090;
   }
 }
 
