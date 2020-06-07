@@ -1,0 +1,49 @@
+.date-popup {
+  position: absolute;
+  left: -20px;
+  top: 121px;
+  padding: 0 16px;
+  width: calc(100% + 8px);
+}
+
+.date-popup__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: #292929;
+}
+
+.date-popup__nav-item {
+  font-family: 'Lora', sans-serif;
+  font-size: 14.4px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  padding: 14.4px;
+  flex-grow: 1;
+  text-align: center;
+  position: relative;
+}
+
+.date-popup__nav-item--arrow-left::before{
+  content: "";
+  position: absolute;
+  left: 14.4px;
+  top: calc(50% - 6px);
+  border: 6px solid #909090;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 3px;
+}
+.date-popup__nav-item--arrow-right::before{
+  content: "";
+  position: absolute;
+  right: 14.4px;
+  top: calc(50% - 6px);
+  border: 6px solid #909090;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 3px;
+}
