@@ -1,5 +1,22 @@
 .form__date-popup.date-popup
-  .date-popup__nav
+  .date-popup__nav-day
     a.date-popup__nav-item.date-popup__nav-item--arrow-left(href="#")
     a.date-popup__nav-item(href="#") Today
     a.date-popup__nav-item.date-popup__nav-item--arrow-right(href="#")
+  .date-popup__nav-month-year
+    select.date-popup__item
+      option(value="January") January
+      option(value="February") February
+      option(value="March") March
+      option(value="April") April
+      option(value="May") May
+      option(value="June" selected) June
+      option(value="July") July
+      option(value="August") August
+      option(value="September") September
+      option(value="October") October
+      option(value="November") November
+      option(value="December") December
+    select.date-popup__item
+      - for(let i=2020; i<=2045; i++)
+        option(value= i)= i
