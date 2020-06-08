@@ -20,3 +20,50 @@
     select.date-popup__item
       - for(let i=2020; i<=2045; i++)
         option(value= i)= i
+  .date-popup__calendar
+    table.date-popup__table-today
+      tr
+        - let month = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su']
+        each item in month
+          th= item
+      tr
+        -for(let i = 1; i <= 7; i++)
+          td
+      tr
+        -for(let i = 1; i <= 7; i++)
+          td= i
+      tr
+        -for(let i = 8; i <= 14; i++)
+          td= i
+      tr
+        -for(let i = 15; i <= 21; i++)
+          td= i
+      tr
+        -for(let i = 22; i <= 28; i++)
+          td= i
+      tr
+        -for(let i = 29; i <= 30; i++)
+          td= i
+  .date-popup__next-month July 2020
+  .date-popup__calendar
+    table.date-popup__table-today
+      tr
+        each item in month
+          th= item
+      tr
+        -for(let i = 1; i <= 2; i++)
+          td
+        -for(let i = 1; i <= 5; i++)
+          td= i
+      tr
+        -for(let i = 6; i <= 12; i++)
+          td= i
+      tr
+        -for(let i = 13; i <= 19; i++)
+          td= i
+      tr
+        -for(let i = 20; i <= 26; i++)
+          td= i
+      tr
+        -for(let i = 27; i <= 31; i++)
+          td= i
